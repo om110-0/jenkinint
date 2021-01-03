@@ -32,10 +32,12 @@ public class OrangeHRM_test
 	  driver.findElement(By.id(ab.getProperty("Passwordxpath"))).sendKeys(ab.getProperty("Password"));
 	  Thread.sleep(3000);
 	  driver.findElement(By.xpath(ab.getProperty("loginxpath"))).click();
-	  Thread.sleep(3000);
+	  Thread.sleep(5000);
 	  driver.findElement(By.xpath(ab.getProperty("Welcomeadminxpath"))).click();
-	  Thread.sleep(3000);
+	  Thread.sleep(5000);
 	  driver.findElement(By.xpath(ab.getProperty("Logoutxpath"))).click();
+	  Thread.sleep(5000);
+	  driver.close();
 	  
 	  
   }
